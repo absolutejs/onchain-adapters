@@ -1,0 +1,11 @@
+{
+  "name": "@absolutejs/onchain-base",
+  "version": "0.0.1",
+  "description": "Base (L2) adapter for @absolutejs/onchain: gasless soulbound seed-is-asset minting, with un-forgeable, GitHub-verified attestations.",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "files": ["src"],
+  "dependencies": { "@absolutejs/onchain": "^0.0.1" },
+  "keywords": ["absolutejs", "onchain", "base", "soulbound", "paymaster", "erc721"],
+  "license": "MIT"
+}

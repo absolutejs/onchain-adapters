@@ -1,0 +1,6 @@
+{
+  "name": "@absolutejs/onchain-adapters",
+  "private": true,
+  "description": "Real-chain adapters for @absolutejs/onchain (the core ships a local adapter for dev/off-chain).",
+  "workspaces": ["base"]
+}
