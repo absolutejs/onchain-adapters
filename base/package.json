@@ -7,5 +7,5 @@
   "files": ["src"],
   "dependencies": { "@absolutejs/onchain": "^0.0.1" },
   "keywords": ["absolutejs", "onchain", "base", "soulbound", "paymaster", "erc721"],
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
