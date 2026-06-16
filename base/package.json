@@ -7,9 +7,26 @@
   },
   "description": "Base (L2) adapter for @absolutejs/onchain: gasless soulbound seed-is-asset minting, with un-forgeable, GitHub-verified attestations.",
   "type": "module",
-  "exports": { ".": "./src/index.ts" },
-  "files": ["src"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "rm -rf dist && bun build src/index.ts --outdir dist --sourcemap --target=bun --external @absolutejs/onchain && tsc --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": { "@absolutejs/onchain": "^0.0.1" },
   "keywords": ["absolutejs", "onchain", "base", "soulbound", "paymaster", "erc721"],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^5.9.0"
+  }
 }
