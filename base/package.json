@@ -1,6 +1,6 @@
 {
   "name": "@absolutejs/onchain-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/absolutejs/onchain-adapters/tree/main/base",
   "bugs": {
     "url": "https://github.com/absolutejs/onchain-adapters/issues"
@@ -22,7 +22,7 @@
     "build": "rm -rf dist && bun build src/index.ts --outdir dist --sourcemap --target=bun --external @absolutejs/onchain && tsc --project tsconfig.build.json",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": { "@absolutejs/onchain": "^0.0.1" },
+  "dependencies": { "@absolutejs/onchain": "^0.0.2" },
   "keywords": ["absolutejs", "onchain", "base", "soulbound", "paymaster", "erc721"],
   "license": "Apache-2.0",
   "devDependencies": {
