@@ -6,6 +6,11 @@
     "url": "https://github.com/absolutejs/onchain-adapters/issues"
   },
   "description": "Base (L2) adapter for @absolutejs/onchain: gasless soulbound seed-is-asset minting, with un-forgeable, GitHub-verified attestations.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absolutejs/onchain-adapters.git",
+    "directory": "base"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
